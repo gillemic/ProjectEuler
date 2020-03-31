@@ -1,21 +1,14 @@
-i = 1
-largest = 2
+def nth_prime(n):
+    counter = 2
+    for i in range(3, n**2, 2):
+        k = 1
+        while k*k < i:
+            k += 2
+            if i % k == 0:
+               break
+        else:
+            counter += 1
+        if counter == n:
+            return i
 
-for j in range(3, 1000000):
-	isPrime = True
-	for k in range(2, j-1):
-		if (j % k == 0):
-			isPrime = False
-			break
-
-		if (isPrime):
-			i+=1
-
-		if i == 10001:
-			largest = j
-			break
-
-
-
-print(largest)
-
+print(nth_prime(10001))
