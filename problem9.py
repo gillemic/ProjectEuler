@@ -1,6 +1,4 @@
-a = 1
-b = 1
-c = 1
+#/usr/bin/python3
 
 for a in range(1,1000):
   for b in range(1,1000):
