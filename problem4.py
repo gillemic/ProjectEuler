@@ -1,3 +1,5 @@
+#largest palindrome product of two 3 digit numbers
+
 highest = 0
 
 x = 1

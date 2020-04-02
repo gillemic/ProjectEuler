@@ -1,3 +1,6 @@
+#fib sequence
+#sum of even numbers under 4000000
+
 summ = 2
 i = 2
 prev = 1

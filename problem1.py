@@ -1,3 +1,5 @@
+# Sum of all multiples of 3 or 5 below 1000
+
 sum = 0
 
 for i in range(1, 1000):
