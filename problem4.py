@@ -1,5 +1,9 @@
 #largest palindrome product of two 3 digit numbers
 
+import time
+
+start = time.time()
+
 highest = 0
 
 x = 1
@@ -14,3 +18,7 @@ for i in range(100, 999):
 			y = j
 
 print(str(highest) + " = " + str(x) + " x " + str(y))
+
+end = time.time() - start
+
+print("Program took " + str(end) + " seconds")

@@ -1,3 +1,7 @@
+import time
+
+start = time.time()
+
 check_list = [11, 13, 14, 16, 17, 18, 19, 20]
 
 def find_solution(step):
@@ -12,3 +16,5 @@ if __name__ == '__main__':
         print("No answer found")
     else:
         print("found an answer: " + str(solution))
+
+    print("Time elapsed: " + str(time.time() - start) + " seconds")

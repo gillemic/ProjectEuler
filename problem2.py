@@ -1,5 +1,8 @@
 #fib sequence
 #sum of even numbers under 4000000
+import time
+
+start = time.time()
 
 summ = 2
 i = 2
@@ -13,3 +16,5 @@ while (i < 4000000):
 		summ += i
 
 print(summ)
+
+print("Operation took " + str(time.time() - start) + " seconds")
