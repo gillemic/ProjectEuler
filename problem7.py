@@ -1,3 +1,7 @@
+import time
+
+start = time.time()
+
 def nth_prime(n):
     counter = 2
     for i in range(3, n**2, 2):
@@ -12,3 +16,5 @@ def nth_prime(n):
             return i
 
 print(nth_prime(10001))
+
+print("Time elapsed: " + str(time.time() - start) + " seconds")

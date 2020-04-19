@@ -1,5 +1,9 @@
 #/usr/bin/python3
 
+import time
+
+start = time.time()
+
 num = '73167176531330624919225119674426574742355349194934\
 96983520312774506326239578318016984801869478851843\
 85861560789112949495459501737958331952853208805511\
@@ -39,3 +43,5 @@ while i < len(num) - 12:
     i = i+1
 
 print(str(biggest) + "\n" + substring)
+
+print("Time elapsed: " + str(time.time() - start) + " seconds")

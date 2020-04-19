@@ -1,4 +1,7 @@
 import math
+import time
+
+start = time.time()
 
 maximum = 2000000
 summ = 2
@@ -13,3 +16,4 @@ for i in range(3, maximum):
         summ += i
 
 print(summ)
+print("Time elapsed: " + str(time.time() - start) + " seconds")
