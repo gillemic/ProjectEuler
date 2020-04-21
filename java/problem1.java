@@ -1,5 +1,7 @@
 public class problem1 {
     public static void main(String[] args) {
+        final long startTime = System.currentTimeMillis();
+
         int nr = 1000;
         nr--;
         int x3 = nr/3;
@@ -12,5 +14,9 @@ public class problem1 {
 
         long sum = (sum1+sum2-sum3)/2;
         System.out.println(sum);
+
+        final long endTime = System.currentTimeMillis();
+
+        System.out.println("Total execution time: " + (endTime - startTime));
     }
 }
