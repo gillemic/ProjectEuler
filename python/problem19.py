@@ -35,3 +35,5 @@ def first_sundays_since_1901(end_year):
     print(num_of_sundays)
 
 first_sundays_since_1901(2000)
+
+print("Time elapsed: " + str(time.time() - start) + " seconds")
