@@ -9,8 +9,6 @@ def first_sundays_since_1901(end_year):
     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     thirty_day_months = ['April', 'June', 'September', 'November']
     year = 1901
-    day = 1
-    month = 1
     days_in_month = 31
     current_day = 1
 
