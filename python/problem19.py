@@ -1,4 +1,5 @@
 import time
+import sys
 
 start = time.time()
 
@@ -14,7 +15,7 @@ def first_sundays_since_1901(end_year):
 
     while (year < end_year + 1):
         for i in range(0, 12):
-            if months[i] == 'February' and year % 4 != 0:
+            if months[i] == 'February' and (year % 4 != 0 or (year % 100 == 0 and year % 400 != 0)):
                 days_in_month = 28
             elif months[i] == 'February' and year % 4 == 0:
                 days_in_month = 29
@@ -24,6 +25,7 @@ def first_sundays_since_1901(end_year):
                 days_in_month = 31
 
             if days_of_week[current_day] == 'Sunday':
+                print(months[i] + " 1st, " + str(year) + " was on a Sunday")
                 num_of_sundays += 1
 
             current_day = (current_day + (days_in_month % 7)) % 7
@@ -32,6 +34,15 @@ def first_sundays_since_1901(end_year):
     
     print(num_of_sundays)
 
-first_sundays_since_1901(2000)
+def main():
+    if len(sys.argv) > 1 and int(sys.argv[1]) > 1901:
+        n = int(sys.argv[1])
+    else:
+        n = 2000
+
+    first_sundays_since_1901(n)
+
+if __name__ == '__main__':
+    main()
 
 print("Time elapsed: " + str(time.time() - start) + " seconds")
