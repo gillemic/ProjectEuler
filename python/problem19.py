@@ -32,7 +32,7 @@ def first_sundays_since_1901(end_year):
 
         year += 1
     
-    print(num_of_sundays)
+    print("\nTotal Sundays: " + str(num_of_sundays) + "\n")
 
 def main():
     if len(sys.argv) > 1 and int(sys.argv[1]) > 1901:
