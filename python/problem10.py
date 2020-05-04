@@ -1,3 +1,7 @@
+''' The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+Find the sum of all the primes below two million. '''
+
 import math
 import time
 
@@ -17,3 +21,12 @@ for i in range(3, maximum):
 
 print(summ)
 print("Time elapsed: " + str(time.time() - start) + " seconds")
+
+
+'''
+> python3 problem10.py
+142913828922
+Time elapsed: 194.82365608215332 seconds
+
+needs optimizing very badly
+'''
