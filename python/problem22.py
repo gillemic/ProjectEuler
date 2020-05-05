@@ -27,10 +27,12 @@ def main():
     # print(name_list)
     for i in range(len(name_list)):
         score = 0
-        letters = [str(c) for c in name_list[i]]
+        name = name_list[i]
+        letters = [str(c) for c in name]
         for j in letters:
             score += ord(j)%32
 
+        # print("Name: " + name + " Score: " + str(score) + " x " + str(i))
         total += (score * (i+1))
         pass
 
