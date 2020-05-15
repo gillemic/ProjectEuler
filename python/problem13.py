@@ -1,3 +1,9 @@
+''' Work out the first ten digits of the sum of the following one-hundred 50-digit numbers. '''
+
+import time
+
+start = time.time()
+
 numArray = [37107287533902102798797998220837590246510135740250,
 46376937677490009712648124896970078050417018260538,
 74324986199524741059474233309513058123726617309629,
@@ -100,3 +106,13 @@ numArray = [37107287533902102798797998220837590246510135740250,
 53503534226472524250874054075591789781264330331690]
 
 print(str(sum(numArray))[:10])
+
+print("Time elapsed: " + str(time.time() - start) + " seconds")
+
+
+'''
+> python3 problem13.py
+5537376230
+Time elapsed: 0.0 seconds
+
+'''

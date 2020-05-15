@@ -1,3 +1,7 @@
+''' 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20? '''
+
 import time
 
 start = time.time()
@@ -18,3 +22,12 @@ if __name__ == '__main__':
         print("found an answer: " + str(solution))
 
     print("Time elapsed: " + str(time.time() - start) + " seconds")
+
+
+'''
+> 
+python3 problem5.py
+found an answer: 232792560
+Time elapsed: 7.223424673080444 seconds
+
+'''
