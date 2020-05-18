@@ -22,7 +22,9 @@ import math
 start = time.time()
 
 def is_prime(n):
-    for i in range(2, (math.ceil(math.sqrt(math.fabs(n))))):
+    if (n % 2 == 0):
+        return False
+    for i in range(3, (math.ceil(math.sqrt(math.fabs(n)))), 2):
         if (n % i == 0):
             return False
         
