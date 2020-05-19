@@ -3,10 +3,6 @@ import time
 #time at the start of program execution
 start = time.time()
 
-#Let the sum be 0 at the start
-solution = 0
-n = 5
-
 #for loop to loop till 5(10-1)^5
 def find_solution(n):
     solution = 0
