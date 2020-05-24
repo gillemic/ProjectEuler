@@ -9,8 +9,7 @@ def fib(i, j):
 
 def fib_length(n):
     i = 2
-    k = 1
-    j = 1
+    k = j = 1
     while len(str(k)) < n:
         k = fib(k, j)
         j = k - j
@@ -20,7 +19,6 @@ def fib_length(n):
 
 def main():
     print(fib_length(1000))
-    pass
 
 if __name__ == '__main__':
     main()

@@ -21,7 +21,6 @@ def divide_up_to(x):
 
 def main():
     divide_up_to(1000)
-    pass
 
 if __name__ == '__main__':
     main()
