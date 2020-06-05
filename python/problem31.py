@@ -13,7 +13,7 @@ def find_combos(n):
     print("Ways to make change = {}".format(ways[n]))
 
 def main():
-    find_combos(200)
+    find_combos(400)
 
 if __name__ == '__main__':
     main()

@@ -13,11 +13,11 @@ def find_pandigital(n):
         for j in range(start, 10000//i):
             if is_pandigital(str(i) + str(j) + str(i*j)): 
                 p.add(i*j)
+
     print("Sum of products: " + str(sum(p)))
-    print(p)
 
 def main():
-    find_pandigital(5)
+    find_pandigital(9)
 
 if __name__ == '__main__':
     main()
