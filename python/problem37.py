@@ -25,21 +25,20 @@ def find_primes(n):
 def truncatable_primes(prime_list):
     truncatables = set()
     for i in prime_list[4:]:
-        nums = []
+        nums = set()
         digits = str(i)
         for j in range(1, len(digits)):
-            nums.append(int(digits[j:]))
-            nums.append(int(digits[:j]))
+            nums.add(int(digits[j:]))
+            nums.add(int(digits[:j]))
         if all(n in prime_list for n in nums):
             truncatables.add(i)
-        
 
     
     print(truncatables)
     print(sum(truncatables))
 
 def main():
-    primes = find_primes(1000000)
+    primes = find_primes(750000)
     truncatable_primes(primes)
 
 if __name__ == '__main__':
