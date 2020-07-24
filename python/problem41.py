@@ -23,9 +23,9 @@ def pandigital_primes():
             highest = i
 
     print(highest)
+    print(max(prime_list))
 
 def main():
-    #print(generate_primes(100000))
     pandigital_primes()
 
 if __name__ == '__main__':
